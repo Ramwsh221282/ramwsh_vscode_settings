@@ -1,75 +1,76 @@
 {
-  "window.zoomLevel": 1.5,
-  "editor.fontSize": 15,
-  "editor.fontLigatures": true,
-  "editor.fontFamily": "JetBrainsMono Nerd Font",
-  "terminal.integrated.fontFamily": "JetBrainsMono Nerd Font Mono",
-  "editor.fontWeight": "600",
-  "editor.lineHeight": 1.4,
-  "terminal.integrated.shellIntegration.enabled": false,
-  "editor.formatOnSave": true,
-  "js/ts.suggest.autoImports": true,
-  "js/ts.suggest.paths": false,
-  "editor.defaultFormatter": "esbenp.prettier-vscode",
-  "js/ts.tsdk.path": "node_modules/typescript/lib",
-  "js/ts.tsdk.promptToUseWorkspaceVersion": true,
-  "errorLens.enabledDiagnosticLevels": ["error", "warning", "info", "hint"],
   "git.openRepositoryInParentFolders": "always",
-  "workbench.secondarySideBar.defaultVisibility": "hidden",
-  "explorer.confirmDelete": false,
-  "workbench.colorTheme": "Calmppuccin Nitro Cold Brew",
-  "workbench.iconTheme": "catppuccin-mocha",
-  "dotrush.debugger.console": "integratedTerminal",
-  "dotnet.server.path": "/home/ramwsh/.dotnet/tools/roslyn-language-server",
-  "extensions.ignoreRecommendations": true,
-  "debug.openDebug": "neverOpen",
-  "github.copilot.enable": {
-    "*": true
-  },
-  "editor.minimap.enabled": false,
-  "github.copilot.nextEditSuggestions.eagerness": "high",
-  "github.copilot.nextEditSuggestions.enabled": true,
-  "github.copilot.nextEditSuggestions.extendedRange": true,
-  "html.suggest.hideEndTagSuggestions": true,
-  "editor.suggest.insertMode": "insert",
-  "path-intellisense.autoTriggerNextSuggestion": true,
+  "window.zoomLevel": 2,
+  "editor.cursorStyle": "block",
+
+  // debugging:
+  "debug.inlineValues": "on",
+
+  // suggestions settings
+  "editor.fontFamily": "JetBrainsMono Nerd Font",
+  "editor.fontWeight": "600",
+  "editor.suggest.showFolders": true,
+  "editor.suggest.showWords": true,
   "editor.suggest.preview": true,
-  "editor.suggest.matchOnWordStartOnly": true,
-  "editor.suggest.shareSuggestSelections": true,
   "editor.quickSuggestions": {
-    "strings": "on",
+    "other": "on",
     "comments": "on",
-    "other": "on"
+    "strings": "on"
   },
-  "editor.guides.bracketPairs": "active",
-  "editor.snippetSuggestions": "bottom",
-  "github.copilot.chat.codesearch.enabled": true,
-  "github.copilot.chat.completionsFetcher": "node-fetch",
-  "github.copilot.chat.inlineEdits.chatSessionContextProvider.enabled": true,
-  "github.copilot.nextEditSuggestions.fixes": true,
-  "github.copilot.chat.inlineEdits.diagnosticsContextProvider.enabled": true,
-  "github.copilot.chat.inlineEdits.renameSymbolSuggestions": true,
-  "github.copilot.chat.inlineEdits.nextCursorPrediction.displayLine": true,
-  "github.copilot.renameSuggestions.triggerAutomatically": true,
-  "search.searchView.keywordSuggestions": true,
-  "zenMode.fullScreen": true,
-  "zenMode.centerLayout": false,
-  "zenMode.hideStatusBar": false,
-  "zenMode.showTabs": "multiple",
-  "zenMode.hideActivityBar": false,
-  "explorer.confirmDragAndDrop": false,
-  "editor.inlineSuggest.syntaxHighlightingEnabled": true,
-  "editor.suggest.showIcons": true,
-  "editor.inlineSuggest.enabled": true,
+
+  // "editor.inlineSuggest.showToolbar": "always",
+  // css html settings:
+  "css.enabledLanguages": ["html", "vue", "typescript", "ts"],
+  "css.styleSheets": ["src/**/*.css"],
+
+  // tailwind css settings:
+  "tailwindCSS.includeLanguages": {
+    "*.css": "tailwindcss",
+    "*.vue": "tailwindcss",
+    "*.ts": "tailwindcss"
+  },
+
+  // formatting:
+  "editor.defaultFormatter": "esbenp.prettier-vscode",
+  "editor.formatOnSave": true,
+  "[vue]": {
+    "editor.defaultFormatter": "Vue.volar"
+  },
+
+  // errors showing in editor:
+  "statusbarerror.gutter.hint.show": true,
+  "statusbarerror.gutter.info.show": true,
+  "statusbarerror.gutter.warning.show": true,
+  "statusbarerror.gutter.error.show": true,
+  "statusbarerror.wholeLine.show": true,
+  "statusbarerror.color.warning": "#dfcb9e",
+  "statusbarerror.color.error": "#e98ea8",
+  "statusbarerror.color.hint": "#addaa8",
+  "statusbarerror.color.info": "#8eb2eb",
+  "statusbarerror.wholeLine.warningColor": "#dfcb9e",
+  "statusbarerror.wholeLine.errorColor": "#e98ea8",
+  "statusbarerror.wholeLine.errorFontColor": "#11111b",
+  "statusbarerror.wholeLine.warningFontColor": "#11111b",
+
+  // custom css and js:
   "vscode_custom_css.imports": [
-    "file:///home/ramwsh/css.css",
-    "file:///home/ramwsh/js.js"
+    "file://${userHome}/.vscode-insiders/custom/vscode-custom.css"
   ],
-  "vscode_custom_css.statusbar": true,
+  "workbench.colorTheme": "Calmppuccin Mocha",
+  "workbench.iconTheme": "catppuccin-mocha",
+
+  // zen (full screen settings):
+  "zenMode.centerLayout": false,
+  "zenMode.hideActivityBar": false,
+  "zenMode.fullScreen": true,
+  "zenMode.showTabs": "multiple",
+  "zenMode.hideLineNumbers": false,
+  "zenMode.silentNotifications": false,
+  "zenMode.hideStatusBar": false,
   "calmppuccin.profiles": {
     "Default": {
       "fontStyleOverrides": {
-        "nitro-cold-brew": {
+        "mocha": {
           "commentFontStyle": "none",
           "typeFontStyle": "none",
           "typeAliasFontStyle": "none",
@@ -84,37 +85,12 @@
           "delegateFontStyle": "none",
           "eventFontStyle": "none",
           "parameterFontStyle": "none",
-          "stringVerbatimFontStyle": "none",
-          "operatorOverloadFontStyle": "none"
+          "stringVerbatimFontStyle": "none"
         }
       }
     }
   },
-  "window.titleBarStyle": "custom",
-  "dbcode.connections": [
-    {
-      "connectionId": "0xCLL34AWRtZG9xyCi_7-",
-      "name": "petfamily",
-      "driver": "postgres",
-      "connectionType": "host",
-      "host": "127.0.0.1",
-      "port": 5655,
-      "ssl": false,
-      "authMethod": "password",
-      "username": "postgres",
-      "password": "",
-      "savePassword": "secretStorage",
-      "database": "pet_family_db",
-      "readOnly": false,
-      "postConnectionSqlType": "inline",
-      "connectionTimeout": 30,
-      "pinnedConnectionTimeout": "0",
-      "introspection": {
-        "progressive": false
-      }
-    }
-  ],
-  "window.commandCenter": false,
-  "window.menuBarVisibility": "compact",
-  "workbench.layoutControl.enabled": false
+  "gitlens.ai.model": "vscode",
+  "gitlens.ai.vscode.model": "copilot:gpt-4.1",
+  "explorer.confirmDelete": false
 }
