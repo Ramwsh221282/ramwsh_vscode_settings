@@ -1,72 +1,162 @@
 {
-  "git.openRepositoryInParentFolders": "always",
-  "window.zoomLevel": 2,
+  // general
+  "explorer.confirmDelete": false,
+  "security.workspace.trust.enabled": false,
+  "explorer.compactFolders": true,
+
+  // appearence:
+  "editor.minimap.enabled": false,
+  "window.zoomLevel": 1.5,
   "editor.cursorStyle": "block",
+  "editor.fontFamily": "JetBrainsMono Nerd Font Mono",
+  "editor.codeLensFontFamily": "JetBrainsMono Nerd Font Mono",
+  "chat.fontFamily": "JetBrainsMono Nerd Font Mono",
+  "scm.inputFontFamily": "JetBrainsMono Nerd Font Mono",
+  "errorLens.fontFamily": "JetBrainsMono Nerd Font Mono",
+  "chat.editor.fontFamily": "JetBrainsMono Nerd Font Mono",
+  "debug.console.fontFamily": "JetBrainsMono Nerd Font Mono",
+  "notebook.output.fontFamily": "JetBrainsMono Nerd Font Mono",
+  "gitlens.blame.fontFamily": "JetBrainsMono Nerd Font Mono",
+  "notebook.markup.fontFamily": "JetBrainsMono Nerd Font Mono",
+  "markdown.preview.fontFamily": "JetBrainsMono Nerd Font Mono",
+  "editor.inlayHints.fontFamily": "JetBrainsMono Nerd Font Mono",
+  "gitlens.currentLine.fontFamily": "JetBrainsMono Nerd Font Mono",
+  "terminal.integrated.fontFamily": "JetBrainsMono Nerd Font Mono",
+  "editor.inlineSuggest.fontFamily": "JetBrainsMono Nerd Font Mono",
+  "workbench.experimental.fontFamily": "JetBrainsMono Nerd Font Mono",
+  "workbench.tabs.experimental.fontFamily": "JetBrainsMono Nerd Font Mono",
+  "workbench.sideBar.experimental.fontFamily": "JetBrainsMono Nerd Font Mono",
+  "workbench.statusBar.experimental.fontFamily": "JetBrainsMono Nerd Font Mono",
+  "workbench.bottomPane.experimental.fontFamily": "JetBrainsMono Nerd Font Mono",
+  "workbench.activityBar.experimental.fontFamily": "JetBrainsMono Nerd Font Mono",
+  "editor.fontWeight": "600",
+
+  // zen:
+  "zenMode.centerLayout": false,
+  "zenMode.fullScreen": true,
+  "zenMode.hideActivityBar": false,
+  "zenMode.hideLineNumbers": false,
+  "zenMode.hideStatusBar": false,
+  "zenMode.restore": true,
+  "zenMode.showTabs": "multiple",
+  "zenMode.silentNotifications": false,
 
   // debugging:
   "debug.inlineValues": "on",
 
-  // suggestions settings
-  "editor.fontFamily": "JetBrainsMono Nerd Font",
-  "editor.fontWeight": "600",
+  // suggestions:
+  "editor.inlineSuggest.edits.showLongDistanceHint": true,
   "editor.suggest.showFolders": true,
   "editor.suggest.showWords": true,
-  "editor.suggest.preview": true,
+  "editor.suggest.showClasses": true,
+  "editor.suggest.showColors": true,
+  "editor.suggest.showConstants": true,
+  "editor.suggest.showConstructors": true,
+  "editor.suggest.showCustomcolors": true,
+  "editor.suggest.showDeprecated": true,
+  "editor.suggest.showEnumMembers": true,
+  "editor.suggest.showEnums": true,
+  "editor.suggest.showEvents": true,
+  "editor.suggest.showFields": true,
+  "editor.suggest.showFiles": true,
+  "editor.suggest.showFunctions": true,
+  "editor.suggest.showIcons": true,
+  "editor.suggest.showInlineDetails": true,
+  "editor.suggest.showInterfaces": true,
+  "editor.suggest.showKeywords": true,
+  "editor.suggest.showIssues": true,
+  "editor.suggest.showMethods": true,
+  "editor.suggest.showModules": true,
+  "editor.suggest.showOperators": true,
+  "editor.suggest.showProperties": true,
+  "editor.suggest.showReferences": true,
+  "editor.suggest.showSnippets": true,
+  "editor.suggest.showStatusBar": true,
+  "editor.suggest.showStructs": true,
+  "editor.suggest.showTypeParameters": true,
+  "editor.suggest.showUnits": true,
+  "editor.suggest.showUsers": true,
+  "editor.suggest.showValues": true,
+  "editor.suggest.showVariables": true,
+  "editor.inlineSuggest.showToolbar": "never",
+  "editor.quickSuggestionsDelay": 0,
   "editor.quickSuggestions": {
     "other": "on",
     "comments": "on",
-    "strings": "on"
+    "strings": "on",
   },
-
-  // "editor.inlineSuggest.showToolbar": "always",
-  // css html settings:
-  "css.enabledLanguages": ["html", "vue", "typescript", "ts"],
-  "css.styleSheets": ["src/**/*.css"],
-
-  // tailwind css settings:
-  "tailwindCSS.includeLanguages": {
-    "*.css": "tailwindcss",
-    "*.vue": "tailwindcss",
-    "*.ts": "tailwindcss"
-  },
+  "editor.suggest.matchOnWordStartOnly": true,
+  "editor.suggest.filterGraceful": true,
+  "editor.suggest.localityBonus": true,
+  "editor.inlineSuggest.edits.allowCodeShifting": "horizontal",
+  "editor.inlineSuggest.enabled": true,
+  "editor.inlineSuggest.minShowDelay": 0,
+  "editor.wordBasedSuggestions": "allDocuments",
+  "editor.inlineCompletionsAccessibilityVerbose": true,
+  "editor.inlineSuggest.edits.renderSideBySide": "auto",
+  "editor.inlineSuggest.edits.showCollapsed": true,
+  "editor.screenReaderAnnounceInlineSuggestion": true,
+  "editor.suggest.preview": true,
 
   // formatting:
   "editor.defaultFormatter": "esbenp.prettier-vscode",
   "editor.formatOnSave": true,
-  "[vue]": {
-    "editor.defaultFormatter": "Vue.volar"
+
+  // tailwindcss:
+  "tailwindCSS.includeLanguages": {
+    "*.css": "tailwindcss",
+    "*.vue": "tailwindcss",
+    "*.ts": "tailwindcss",
   },
 
-  // errors showing in editor:
-  "statusbarerror.gutter.hint.show": true,
-  "statusbarerror.gutter.info.show": true,
-  "statusbarerror.gutter.warning.show": true,
-  "statusbarerror.gutter.error.show": true,
-  "statusbarerror.wholeLine.show": true,
-  "statusbarerror.color.warning": "#dfcb9e",
-  "statusbarerror.color.error": "#e98ea8",
-  "statusbarerror.color.hint": "#addaa8",
-  "statusbarerror.color.info": "#8eb2eb",
-  "statusbarerror.wholeLine.warningColor": "#dfcb9e",
-  "statusbarerror.wholeLine.errorColor": "#e98ea8",
-  "statusbarerror.wholeLine.errorFontColor": "#11111b",
-  "statusbarerror.wholeLine.warningFontColor": "#11111b",
+  // git
+  "git.openRepositoryInParentFolders": "always",
 
-  // custom css and js:
-  "vscode_custom_css.imports": [
-    "file://${userHome}/.vscode-insiders/custom/vscode-custom.css"
+  // errorLens:
+  "errorLens.border": ["2px solid", "2px solid", "2px solid", "2px solid"],
+  "errorLens.codeLensEnabled": false,
+  "errorLens.enabledDiagnosticLevels": ["error", "warning", "info", "hint"],
+  "errorLens.padding": "2px 1ch",
+  "errorLens.gutterIconsEnabled": true,
+  "errorLens.messageBackgroundMode": "none",
+  "chat.disableAIFeatures": false,
+  "workbench.secondarySideBar.defaultVisibility": "hidden",
+
+  // telemetry:
+  "telemetry.editStats.details.enabled": false,
+  "telemetry.editStats.enabled": false,
+  "telemetry.editStats.showDecorations": false,
+  "telemetry.editStats.showStatusBar": false,
+  "telemetry.feedback.enabled": false,
+  "telemetry.telemetryLevel": "off",
+  "gitlens.telemetry.enabled": false,
+  "editor.experimental.treeSitterTelemetry": false,
+
+  // vue:
+  "[vue]": {
+    "editor.defaultFormatter": "Vue.volar",
+    "editor.formatOnSave": true,
+  },
+
+  // css
+  "css.enabledLanguages": [
+    "html",
+    "ts",
+    "typescript",
+    "javascript",
+    "javascriptreact",
+    "typescriptreact",
+    "vue",
+    "css",
+    "scss",
+    "less",
+    "postcss",
+    "sass",
   ],
-  "workbench.colorTheme": "Calmppuccin Mocha",
-  "workbench.iconTheme": "catppuccin-mocha",
+  "css.hover.documentation": true,
+  "css.styleSheets": ["src/**/*.css", "**/*.css"],
 
-  // zen (full screen settings):
-  "zenMode.centerLayout": false,
-  "zenMode.hideActivityBar": false,
-  "zenMode.fullScreen": true,
-  "zenMode.showTabs": "multiple",
-  "zenMode.hideLineNumbers": false,
-  "zenMode.silentNotifications": false,
-  "zenMode.hideStatusBar": false,
+  "workbench.colorTheme": "Calmppuccin Mocha",
   "calmppuccin.profiles": {
     "Default": {
       "fontStyleOverrides": {
@@ -85,12 +175,15 @@
           "delegateFontStyle": "none",
           "eventFontStyle": "none",
           "parameterFontStyle": "none",
-          "stringVerbatimFontStyle": "none"
-        }
-      }
-    }
+        },
+      },
+    },
   },
-  "gitlens.ai.model": "vscode",
-  "gitlens.ai.vscode.model": "copilot:gpt-4.1",
-  "explorer.confirmDelete": false
+  "workbench.iconTheme": "catppuccin-mocha",
+
+  "github.copilot.nextEditSuggestions.eagerness": "high",
+  "github.copilot.nextEditSuggestions.allowWhitespaceOnlyChanges": true,
+  "github.copilot.nextEditSuggestions.enabled": true,
+  "github.copilot.nextEditSuggestions.extendedRange": true,
+  "github.copilot.nextEditSuggestions.fixes": true,
 }
