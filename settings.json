@@ -88,7 +88,7 @@
   "editor.quickSuggestions": {
     "other": "on",
     "comments": "on",
-    "strings": "on",
+    "strings": "on"
   },
   "editor.suggest.matchOnWordStartOnly": true,
   "editor.suggest.filterGraceful": true,
@@ -111,7 +111,7 @@
   "tailwindCSS.includeLanguages": {
     "*.css": "tailwindcss",
     "*.vue": "tailwindcss",
-    "*.ts": "tailwindcss",
+    "*.ts": "tailwindcss"
   },
 
   // git
@@ -147,7 +147,7 @@
   // vue:
   "[vue]": {
     "editor.defaultFormatter": "Vue.volar",
-    "editor.formatOnSave": true,
+    "editor.formatOnSave": true
   },
 
   // css
@@ -163,7 +163,7 @@
     "scss",
     "less",
     "postcss",
-    "sass",
+    "sass"
   ],
   "css.hover.documentation": true,
   "css.styleSheets": [
@@ -171,7 +171,7 @@
     "**/*.css",
     "**/*.scss",
     "**/*.sass",
-    "**/*.less",
+    "**/*.less"
   ],
 
   // копайлот
@@ -198,7 +198,7 @@
           "delegateFontStyle": "none",
           "eventFontStyle": "none",
           "parameterFontStyle": "none",
-          "stringVerbatimFontStyle": "none",
+          "stringVerbatimFontStyle": "none"
         },
         "nitro-cold-brew": {
           "commentFontStyle": "none",
@@ -215,16 +215,16 @@
           "delegateFontStyle": "none",
           "eventFontStyle": "none",
           "parameterFontStyle": "none",
-          "stringVerbatimFontStyle": "none",
-        },
-      },
-    },
+          "stringVerbatimFontStyle": "none"
+        }
+      }
+    }
   },
 
   // typst
   "[typst]": {
     "editor.defaultFormatter": "myriad-dreamin.tinymist",
-    "editor.formatOnSave": true,
+    "editor.formatOnSave": true
   },
   "tinymist.compileStatus": "enable",
   "tinymist.formatterMode": "typstyle",
@@ -246,18 +246,18 @@
   "[csharp]": {
     "editor.defaultFormatter": "haloscript.astyle-lsp-vscode",
     "editor.formatOnSave": true,
-    "editor.formatOnPaste": true,
+    "editor.formatOnPaste": true
   },
   "editor.semanticTokenColorCustomizations": {
     "rules": {
       "interface": {
-        "foreground": "#b8ce82",
+        "foreground": "#b8ce82"
       },
       "namespace": "#ccc",
       "enum": "#b8ce82",
       "struct": {
-        "foreground": "#86C691",
-      },
-    },
+        "foreground": "#86C691"
+      }
+    }
   }
 }

@@ -1,5 +1,8 @@
+blipk.csharp
 bradlc.vscode-tailwindcss
 catppuccin.catppuccin-vsc-icons
+chrisatwindsurf.csharpextension
+ckob.lazydotnet
 daelmaak.next-error
 eamodio.gitlens
 ecmel.vscode-html-css
