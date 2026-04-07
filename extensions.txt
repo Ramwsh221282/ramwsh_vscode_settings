@@ -1,5 +1,8 @@
+blipk.csharp
 bradlc.vscode-tailwindcss
 catppuccin.catppuccin-vsc-icons
+chrisatwindsurf.csharpextension
+ckob.lazydotnet
 daelmaak.next-error
 eamodio.gitlens
 ecmel.vscode-html-css
@@ -7,8 +10,14 @@ esbenp.prettier-vscode
 formulahendry.auto-close-tag
 formulahendry.auto-rename-tag
 github.copilot-chat
+haloscript.astyle-lsp-vscode
+joeberria.statusbarerror
 kenan-salar.calmppuccin-vscode
-koda.koda
+linyuansup.namespace-autocompletion
+ms-dotnettools.vscode-dotnet-runtime
+myriad-dreamin.tinymist
+nromanov.dotrush
+patcx.vscode-nuget-gallery
 selemondev.shadcn-vue
 usernamehw.errorlens
 vincaslt.highlight-matching-tag

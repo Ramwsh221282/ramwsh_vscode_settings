@@ -2,9 +2,12 @@
   // general
   "explorer.confirmDelete": false,
   "security.workspace.trust.enabled": false,
-  "explorer.compactFolders": true,
 
   // appearence:
+  "explorer.compactFolders": true,
+  "chat.viewSessions.orientation": "stacked",
+  "editor.smoothScrolling": true,
+  "editor.cursorSmoothCaretAnimation": "on",
   "editor.minimap.enabled": false,
   "window.zoomLevel": 1.5,
   "editor.cursorStyle": "block",
@@ -12,7 +15,6 @@
   "editor.codeLensFontFamily": "JetBrainsMono Nerd Font Mono",
   "chat.fontFamily": "JetBrainsMono Nerd Font Mono",
   "scm.inputFontFamily": "JetBrainsMono Nerd Font Mono",
-  "errorLens.fontFamily": "JetBrainsMono Nerd Font Mono",
   "chat.editor.fontFamily": "JetBrainsMono Nerd Font Mono",
   "debug.console.fontFamily": "JetBrainsMono Nerd Font Mono",
   "notebook.output.fontFamily": "JetBrainsMono Nerd Font Mono",
@@ -111,16 +113,23 @@
 
   // git
   "git.openRepositoryInParentFolders": "always",
-
-  // errorLens:
-  "errorLens.border": ["2px solid", "2px solid", "2px solid", "2px solid"],
-  "errorLens.codeLensEnabled": false,
-  "errorLens.enabledDiagnosticLevels": ["error", "warning", "info", "hint"],
-  "errorLens.padding": "2px 1ch",
-  "errorLens.gutterIconsEnabled": true,
-  "errorLens.messageBackgroundMode": "none",
   "chat.disableAIFeatures": false,
   "workbench.secondarySideBar.defaultVisibility": "hidden",
+
+  // errors showing in editor:
+  "statusbarerror.gutter.hint.show": true,
+  "statusbarerror.gutter.info.show": true,
+  "statusbarerror.gutter.warning.show": true,
+  "statusbarerror.gutter.error.show": true,
+  "statusbarerror.wholeLine.show": true,
+  "statusbarerror.color.warning": "#dfcb9e",
+  "statusbarerror.color.error": "#e98ea8",
+  "statusbarerror.color.hint": "#addaa8",
+  "statusbarerror.color.info": "#8eb2eb",
+  "statusbarerror.wholeLine.warningColor": "#dfcb9e",
+  "statusbarerror.wholeLine.errorColor": "#e98ea8",
+  "statusbarerror.wholeLine.errorFontColor": "#11111b",
+  "statusbarerror.wholeLine.warningFontColor": "#11111b",
 
   // telemetry:
   "telemetry.editStats.details.enabled": false,
@@ -156,11 +165,18 @@
   "css.hover.documentation": true,
   "css.styleSheets": ["src/**/*.css", "**/*.css"],
 
-  "workbench.colorTheme": "Calmppuccin Mocha",
+  "workbench.colorTheme": "Calmppuccin Latte",
+  "workbench.iconTheme": "catppuccin-latte",
+
+  "github.copilot.nextEditSuggestions.eagerness": "high",
+  "github.copilot.nextEditSuggestions.allowWhitespaceOnlyChanges": true,
+  "github.copilot.nextEditSuggestions.enabled": true,
+  "github.copilot.nextEditSuggestions.extendedRange": true,
+  "github.copilot.nextEditSuggestions.fixes": true,
   "calmppuccin.profiles": {
     "Default": {
       "fontStyleOverrides": {
-        "mocha": {
+        "latte": {
           "commentFontStyle": "none",
           "typeFontStyle": "none",
           "typeAliasFontStyle": "none",
@@ -175,15 +191,31 @@
           "delegateFontStyle": "none",
           "eventFontStyle": "none",
           "parameterFontStyle": "none",
+          "stringVerbatimFontStyle": "none",
         },
       },
     },
   },
-  "workbench.iconTheme": "catppuccin-mocha",
 
-  "github.copilot.nextEditSuggestions.eagerness": "high",
-  "github.copilot.nextEditSuggestions.allowWhitespaceOnlyChanges": true,
-  "github.copilot.nextEditSuggestions.enabled": true,
-  "github.copilot.nextEditSuggestions.extendedRange": true,
-  "github.copilot.nextEditSuggestions.fixes": true,
+  // typst
+  "[typst]": {
+    "editor.defaultFormatter": "myriad-dreamin.tinymist",
+    "editor.formatOnSave": true,
+  },
+  "tinymist.compileStatus": "enable",
+  "tinymist.formatterMode": "typstyle",
+  "tinymist.semanticTokens": "enable",
+  "tinymist.renderDocs": "enable",
+
+  // csharp:
+  "dotrush.roslyn.targetTypedCompletionFilter": true,
+  "dotrush.debugger.console": "integratedTerminal",
+  "dotrush.roslyn.diagnosticsFormat": "AsIs",
+  "dotnetAcquisitionExtension.enableTelemetry": false,
+  "omnisharp.useModernNet": true,
+  "[csharp]": {
+    "editor.defaultFormatter": "haloscript.astyle-lsp-vscode",
+    "editor.formatOnSave": true,
+    "editor.formatOnPaste": true,
+  },
 }
