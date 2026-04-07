@@ -1,18 +1,20 @@
 {
-  // general
+  // общее
   "explorer.confirmDelete": false,
   "security.workspace.trust.enabled": false,
-  "explorer.compactFolders": true,
 
-  // appearence:
+  // внешний вид:
+  "explorer.compactFolders": true,
+  "chat.viewSessions.orientation": "stacked",
+  "editor.smoothScrolling": true,
+  "editor.cursorSmoothCaretAnimation": "on",
   "editor.minimap.enabled": false,
   "window.zoomLevel": 1.5,
-  "editor.cursorStyle": "block",
+  "editor.cursorStyle": "underline",
   "editor.fontFamily": "JetBrainsMono Nerd Font Mono",
   "editor.codeLensFontFamily": "JetBrainsMono Nerd Font Mono",
   "chat.fontFamily": "JetBrainsMono Nerd Font Mono",
   "scm.inputFontFamily": "JetBrainsMono Nerd Font Mono",
-  "errorLens.fontFamily": "JetBrainsMono Nerd Font Mono",
   "chat.editor.fontFamily": "JetBrainsMono Nerd Font Mono",
   "debug.console.fontFamily": "JetBrainsMono Nerd Font Mono",
   "notebook.output.fontFamily": "JetBrainsMono Nerd Font Mono",
@@ -30,8 +32,11 @@
   "workbench.bottomPane.experimental.fontFamily": "JetBrainsMono Nerd Font Mono",
   "workbench.activityBar.experimental.fontFamily": "JetBrainsMono Nerd Font Mono",
   "editor.fontWeight": "600",
+  "editor.fontSize": 15,
+  "workbench.colorTheme": "Calmppuccin Nitro Cold Brew",
+  "workbench.iconTheme": "catppuccin-mocha",
 
-  // zen:
+  // режим zen:
   "zenMode.centerLayout": false,
   "zenMode.fullScreen": true,
   "zenMode.hideActivityBar": false,
@@ -41,10 +46,10 @@
   "zenMode.showTabs": "multiple",
   "zenMode.silentNotifications": false,
 
-  // debugging:
-  "debug.inlineValues": "on",
+  // дебаггинг:
+  "debug.inlineValues": false,
 
-  // suggestions:
+  // подсказки и автодополнение:
   "editor.inlineSuggest.edits.showLongDistanceHint": true,
   "editor.suggest.showFolders": true,
   "editor.suggest.showWords": true,
@@ -98,7 +103,7 @@
   "editor.screenReaderAnnounceInlineSuggestion": true,
   "editor.suggest.preview": true,
 
-  // formatting:
+  // форматирование:
   "editor.defaultFormatter": "esbenp.prettier-vscode",
   "editor.formatOnSave": true,
 
@@ -111,18 +116,25 @@
 
   // git
   "git.openRepositoryInParentFolders": "always",
-
-  // errorLens:
-  "errorLens.border": ["2px solid", "2px solid", "2px solid", "2px solid"],
-  "errorLens.codeLensEnabled": false,
-  "errorLens.enabledDiagnosticLevels": ["error", "warning", "info", "hint"],
-  "errorLens.padding": "2px 1ch",
-  "errorLens.gutterIconsEnabled": true,
-  "errorLens.messageBackgroundMode": "none",
   "chat.disableAIFeatures": false,
   "workbench.secondarySideBar.defaultVisibility": "hidden",
 
-  // telemetry:
+  // ошибки:
+  "statusbarerror.gutter.hint.show": true,
+  "statusbarerror.gutter.info.show": true,
+  "statusbarerror.gutter.warning.show": true,
+  "statusbarerror.gutter.error.show": true,
+  "statusbarerror.wholeLine.show": true,
+  "statusbarerror.color.warning": "#dfcb9e",
+  "statusbarerror.color.error": "#e98ea8",
+  "statusbarerror.color.hint": "#addaa8",
+  "statusbarerror.color.info": "#8eb2eb",
+  "statusbarerror.wholeLine.warningColor": "#dfcb9e",
+  "statusbarerror.wholeLine.errorColor": "#e98ea8",
+  "statusbarerror.wholeLine.errorFontColor": "#11111b",
+  "statusbarerror.wholeLine.warningFontColor": "#11111b",
+
+  // слежка:
   "telemetry.editStats.details.enabled": false,
   "telemetry.editStats.enabled": false,
   "telemetry.editStats.showDecorations": false,
@@ -154,13 +166,24 @@
     "sass",
   ],
   "css.hover.documentation": true,
-  "css.styleSheets": ["src/**/*.css", "**/*.css"],
+  "css.styleSheets": [
+    "src/**/*.css",
+    "**/*.css",
+    "**/*.scss",
+    "**/*.sass",
+    "**/*.less",
+  ],
 
-  "workbench.colorTheme": "Calmppuccin Mocha",
+  // копайлот
+  "github.copilot.nextEditSuggestions.eagerness": "high",
+  "github.copilot.nextEditSuggestions.allowWhitespaceOnlyChanges": true,
+  "github.copilot.nextEditSuggestions.enabled": true,
+  "github.copilot.nextEditSuggestions.extendedRange": true,
+  "github.copilot.nextEditSuggestions.fixes": true,
   "calmppuccin.profiles": {
     "Default": {
       "fontStyleOverrides": {
-        "mocha": {
+        "latte": {
           "commentFontStyle": "none",
           "typeFontStyle": "none",
           "typeAliasFontStyle": "none",
@@ -175,15 +198,66 @@
           "delegateFontStyle": "none",
           "eventFontStyle": "none",
           "parameterFontStyle": "none",
+          "stringVerbatimFontStyle": "none",
+        },
+        "nitro-cold-brew": {
+          "commentFontStyle": "none",
+          "typeFontStyle": "none",
+          "typeAliasFontStyle": "none",
+          "namespaceAttributeFontStyle": "none",
+          "annotationFontStyle": "none",
+          "directiveFontStyle": "none",
+          "decoratorFontStyle": "none",
+          "enumMemberFontStyle": "none",
+          "propertyReadOnlyFontStyle": "none",
+          "variableMutableFontStyle": "none",
+          "extensionMethodFontStyle": "none",
+          "delegateFontStyle": "none",
+          "eventFontStyle": "none",
+          "parameterFontStyle": "none",
+          "stringVerbatimFontStyle": "none",
         },
       },
     },
   },
-  "workbench.iconTheme": "catppuccin-mocha",
 
-  "github.copilot.nextEditSuggestions.eagerness": "high",
-  "github.copilot.nextEditSuggestions.allowWhitespaceOnlyChanges": true,
-  "github.copilot.nextEditSuggestions.enabled": true,
-  "github.copilot.nextEditSuggestions.extendedRange": true,
-  "github.copilot.nextEditSuggestions.fixes": true,
+  // typst
+  "[typst]": {
+    "editor.defaultFormatter": "myriad-dreamin.tinymist",
+    "editor.formatOnSave": true,
+  },
+  "tinymist.compileStatus": "enable",
+  "tinymist.formatterMode": "typstyle",
+  "tinymist.semanticTokens": "enable",
+  "tinymist.renderDocs": "enable",
+
+  // csharp:
+  "csharp.debug.console": "integratedTerminal",
+  "kide.debugger.console": "integratedTerminal",
+  "kide.roslyn.diagnosticsFormat": "AsIs",
+  "csharp-dev-tools.debug.launchConsole": "integratedTerminal",
+  "csharp-dev-tools.debugger.console": "integratedTerminal",
+  "csharp-dev-tools.solutionViewer.trackActiveFile": true,
+  "csharp-dev-tools.editor.autoImportNamespace": true,
+  "csharp-dev-tools.editor.organizeUsingsOnSave": true,
+  "csharp-dev-tools.fileManagement.alwaysRenameType": true,
+  "csharp-dev-tools.solutionViewer.autoNamespaceAdjustment": true,
+  "dotnetAcquisitionExtension.enableTelemetry": false,
+  "[csharp]": {
+    "editor.defaultFormatter": "haloscript.astyle-lsp-vscode",
+    "editor.formatOnSave": true,
+    "editor.formatOnPaste": true,
+  },
+  "editor.semanticTokenColorCustomizations": {
+    "rules": {
+      "interface": {
+        "foreground": "#b8ce82",
+      },
+      "namespace": "#ccc",
+      "enum": "#b8ce82",
+      "struct": {
+        "foreground": "#86C691",
+      },
+    },
+  }
 }
